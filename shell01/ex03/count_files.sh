@@ -1,3 +1,3 @@
 #!/bin/sh
 
-find . -type df, | wc -l
+find . -type d,f | wc -l

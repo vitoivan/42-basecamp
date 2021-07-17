@@ -1,8 +1,5 @@
 #!/bin/sh
 
-FT_LINE1=7
-FT_LINE2=15
-
 cat /etc/passwd | grep . -n | awk -F ":" '{
 	
 	if($1 % 2 == 0)

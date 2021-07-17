@@ -1,3 +1,6 @@
 #!/bin/sh
 
-ls -l | awk '{printf"%s\n\n", $0}'
+ls -l | grep . -n | awk -F ":" '{
+	if($1 % 2 == 1)
+		printf "%s\n", $2
+}'
